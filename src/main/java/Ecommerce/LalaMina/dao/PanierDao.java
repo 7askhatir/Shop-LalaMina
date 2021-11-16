@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface PanierDao {
     Panier addPanie(Panier panier);
+    Panier addProductToPanier(Long id ,Panier panier);
 
 
 

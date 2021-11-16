@@ -14,5 +14,15 @@ public class PanierDaoImp implements  PanierDao{
     public Panier addPanie(Panier panier) {
         return panierRepository.save(panier);
     }
+    @Override
+    public Panier addProductToPanier(Long id, Panier panier) {
+        if(panier.getProduits().containsKey(id))System.out.println("yes");
+        else System.out.println("no");
+        return null;
+    }
+    @Override
+    public Panier findPanierById(Long id) {
+        return panierRepository.findFPanierByIdPanier(id);
+    }
     
 }

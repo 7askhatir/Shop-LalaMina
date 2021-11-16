@@ -22,4 +22,9 @@ public class PanierController {
         ResponseObjet<Panier> objet=new ResponseObjet<>(true,"Panier Add",panierDao.addPanie(panier));
         return new ResponseEntity<>(objet,HttpStatus.OK);
     }
+
+    @PostMapping("/AddProduc/{id}")
+    public ResponseEntity<ResponseObjet<Panier>> addProductToPanier(@RequestParam Long id){
+        return null;
+    }
 }
